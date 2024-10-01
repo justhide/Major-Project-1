@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Major Project 1</title>
+    <link rel="stylesheet" href="Major.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap" rel="stylesheet">
+    <script src="Major.js"></script>
+</head>
+<body>
+    <header>
+        <h2 class="logo">Logo </h2>
+        <nav class="nav-links">
+
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        
+        </nav>
+    </header>
+
+    <section id="home" class="page">
+        <div class="content">
+            <h4>HELLO</h4>
+            <h1>This is <span class="highlight">Company Name</span></h1>
+            <h3>Main Product / Services</h3>
+            <a href="#contact"><button class="btn hire"> Contact Us</button></a>
+        </div>
+        <div class="image-container">
+            <img src="./major B.png" alt="Profile Picture">
+        </div>
+    </section>
+
+    <section id="about" class="page hidden">
+        <div class="about-content">
+            <div class="about-image">
+                <img src="./Major A.png" alt="About Image">
+            </div>
+            <div class="about-text">
+                <h1>About "Company Name"</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <ul class="info-list">
+                    <li><strong>CEO: </strong> Jane Doe</li>
+                    <br>
+                    <li><strong>Location:</strong> U.S.A</li>
+                    <br>
+                    <li><strong>Email:</strong> companyemail@gmail.com</li>
+                    <br>
+                    <li><strong>Phone:</strong> +0123456789</li>
+                </ul>
+                <!-- note: for extra design only-->
+                <button class="btn download">No Function Button</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="page hidden">
+        <h1>Company Reviews</h1>
+        <h4>Reviews from our loyal customers</h4>
+        <ul class="skill-list">
+            <li class="skill">
+                <span>5</span>
+                <div class="bar"><div class="fill" style="width: 95%;"></div></div>
+                <span>95%</span>
+            </li>
+            <li class="skill">
+                <span>4</span>
+                <div class="bar"><div class="fill" style="width: 90%;"></div></div>
+                <span>90%</span>
+            </li>
+            <li class="skill">
+                <span>3</span>
+                <div class="bar"><div class="fill" style="width: 50%;"></div></div>
+                <span>50%</span>
+            </li>
+            <li class="skill">
+                <span>2</span>
+                <div class="bar"><div class="fill" style="width: 20%;"></div></div>
+                <span>20%</span>
+            </li>
+            <li class="skill">
+                <span>1</span>
+                <div class="bar"><div class="fill" style="width: 5%;"></div></div>
+                <span>5%</span>
+            </li>
+        </ul>
+    </section>
+
+    <section id="contact" class="page">
+        <div class="contact-content">
+            <h1>Contact Us</h1>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label> <!-- note: make sure same label and id from template -->
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+
+
+    
+</body>
+</html>
+
